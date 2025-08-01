@@ -1,0 +1,90 @@
+
+erDiagram
+    CATEGORY {
+      INT      id PK
+      VARCHAR  name
+      VARCHAR  imageUrl
+    }
+    PRODUCT {
+      INT      id PK
+      VARCHAR  code
+      VARCHAR  name
+      TEXT     description
+      DECIMAL  price
+      VARCHAR  imageUrl
+      INT      categoryId FK
+    }
+    INVENTORY {
+      INT      id PK
+      INT      productId FK
+      INT      quantity
+      DECIMAL  minimumStock
+      DECIMAL  maximumStock
+      DATETIME createdAt
+      DATETIME updatedAt
+    }
+    INVENTORY_MOVEMENT {
+      INT      id PK
+      INT      productId FK
+      INT      quantity
+      VARCHAR  type
+      VARCHAR  reference
+      VARCHAR  notes
+      DATETIME createdAt
+    }
+    CASH_REGISTER {
+      INT      id PK
+      VARCHAR  name
+      TINYINT  isActive
+      DECIMAL  currentBalance
+      DATETIME createdAt
+      DATETIME updatedAt
+    }
+    SALE {
+      INT      id PK
+      DATETIME date
+      DECIMAL  total
+      VARCHAR  status
+      INT      cashRegisterId FK
+      INT      userId
+      VARCHAR  userName
+    }
+    CASH_REGISTER_MOVEMENT {
+      INT      id PK
+      INT      cashRegisterId FK
+      INT      saleId FK
+      DECIMAL  amount
+      VARCHAR  type
+      VARCHAR  notes
+      DATETIME createdAt
+    }
+    SALE_ITEM {
+      INT      id PK
+      INT      saleId FK
+      INT      productId FK
+      INT      quantity
+      DECIMAL  unitPrice
+      DECIMAL  subtotal
+    }
+    USERS {
+      INT      id PK
+      VARCHAR  email
+      VARCHAR  password
+      VARCHAR  firstName
+      VARCHAR  lastName
+      TINYINT  isActive
+      DATETIME createdAt
+      DATETIME updatedAt
+      VARCHAR  user
+      ENUM     role
+    }
+
+    PRODUCT                }o--|| CATEGORY               : "categoryId"
+    INVENTORY              }o--|| PRODUCT                : "productId"
+    INVENTORY_MOVEMENT     }o--|| PRODUCT                : "productId"
+    SALE_ITEM              }o--|| SALE                   : "saleId"
+    SALE_ITEM              }o--|| PRODUCT                : "productId"
+    CASH_REGISTER_MOVEMENT }o--|| CASH_REGISTER          : "cashRegisterId"
+    CASH_REGISTER_MOVEMENT }o--|| SALE                   : "saleId"
+    SALE                   ||--|| CASH_REGISTER          : "cashRegisterId"
+

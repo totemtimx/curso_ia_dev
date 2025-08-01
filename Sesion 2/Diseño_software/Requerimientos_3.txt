@@ -1,0 +1,338 @@
+Documento de Requerimientos del Sistema
+
+Sistema de Gestión de Biblioteca Universitaria (SGBU)
+
+1. Información General del Proyecto
+
+Nombre del Proyecto: Sistema de Gestión de Biblioteca Universitaria (SGBU) Versión: 1.0 Fecha: Julio 2025 Cliente: Universidad Tecnológica Nacional Equipo de Desarrollo: Equipo IA Development
+
+2. Descripción General
+
+El Sistema de Gestión de Biblioteca Universitaria es una aplicación web que permitirá automatizar los procesos de préstamo, devolución, búsqueda y gestión del inventario de libros, así como la administración de usuarios (estudiantes, profesores y bibliotecarios).
+
+3. Objetivos del Sistema
+
+Objetivo Principal: Digitalizar y optimizar la gestión completa de la biblioteca universitaria.
+
+Objetivos Específicos:
+
+    Automatizar el proceso de préstamos y devoluciones
+    Facilitar la búsqueda y reserva de libros
+    Gestionar el inventario de manera eficiente
+    Generar reportes estadísticos
+    Enviar notificaciones automáticas de vencimientos
+
+4. Actores del Sistema
+
+4.1 Actor: Estudiante
+
+    Descripción: Usuario registrado que puede consultar, reservar y solicitar préstamos
+    Responsabilidades: Buscar libros, realizar reservas, gestionar sus préstamos
+
+4.2 Actor: Profesor
+
+    Descripción: Usuario con privilegios extendidos para préstamos de mayor duración
+    Responsabilidades: Similar al estudiante con períodos de préstamo extendidos
+
+4.3 Actor: Bibliotecario
+
+    Descripción: Personal administrativo con acceso completo al sistema
+    Responsabilidades: Gestionar préstamos, inventario, usuarios y reportes
+
+4.4 Actor: Administrador del Sistema
+
+    Descripción: Responsable técnico del mantenimiento del sistema
+    Responsabilidades: Configuración del sistema, respaldos, usuarios del sistema
+
+5. Requerimientos Funcionales
+
+RF-001: Gestión de Usuarios
+
+Descripción: El sistema debe permitir el registro, modificación y eliminación de usuarios. Prioridad: Alta Actores: Bibliotecario, Administrador Precondiciones: Usuario autenticado con permisos Flujo Principal:
+
+    El bibliotecario accede al módulo de gestión de usuarios
+    Selecciona la opción crear/modificar/eliminar usuario
+    Ingresa o modifica los datos requeridos
+    El sistema valida la información
+    Se confirma la operación
+
+RF-002: Búsqueda de Libros
+
+Descripción: Permitir búsqueda de libros por múltiples criterios. Prioridad: Alta Actores: Estudiante, Profesor, Bibliotecario Criterios de Búsqueda: Título, autor, ISBN, categoría, editorial Flujo Principal:
+
+    El usuario ingresa criterios de búsqueda
+    El sistema consulta la base de datos
+    Se muestran los resultados con disponibilidad
+    El usuario puede ver detalles del libro
+
+RF-003: Gestión de Préstamos
+
+Descripción: Registrar préstamos y devoluciones de libros. Prioridad: Alta Actores: Bibliotecario Reglas de Negocio:
+
+    Estudiantes: máximo 3 libros, 14 días
+    Profesores: máximo 5 libros, 30 días
+    Verificar disponibilidad antes del préstamo
+
+RF-004: Sistema de Reservas
+
+Descripción: Permitir reservar libros no disponibles. Prioridad: Media Actores: Estudiante, Profesor Reglas: Reserva válida por 48 horas después de disponibilidad
+RF-005: Gestión de Inventario
+
+Descripción: Administrar el catálogo de libros. Prioridad: Alta Actores: Bibliotecario Funcionalidades: Agregar, modificar, eliminar libros, gestionar copias
+RF-006: Notificaciones Automáticas
+
+Descripción: Enviar recordatorios de vencimiento y disponibilidad. Prioridad: Media Tipos: Email, notificación en sistema Frecuencia: 3 días antes del vencimiento, al vencer, disponibilidad de reserva
+RF-007: Generación de Reportes
+
+Descripción: Crear reportes estadísticos del uso de la biblioteca. Prioridad: Media Actores: Bibliotecario, Administrador Tipos de Reportes:
+
+    Libros más prestados
+    Usuarios más activos
+    Estadísticas de préstamos por período
+    Inventario actual
+
+6. Requerimientos No Funcionales
+
+RNF-001: Rendimiento
+
+    Tiempo de respuesta máximo de 3 segundos para búsquedas
+    Soporte para 100 usuarios concurrentes
+    Disponibilidad del 99.5%
+
+RNF-002: Seguridad
+
+    Autenticación mediante credenciales universitarias
+    Encriptación de datos sensibles
+    Respaldos diarios automáticos
+    Control de acceso por roles
+
+RNF-003: Usabilidad
+
+    Interfaz intuitiva y responsiva
+    Compatible con navegadores modernos
+    Accesibilidad WCAG 2.1 nivel AA
+
+RNF-004: Compatibilidad
+
+    Navegadores: Chrome, Firefox, Safari, Edge (últimas 2 versiones)
+    Dispositivos: Desktop, tablet, móvil
+    Base de datos: PostgreSQL 13+
+
+7. Modelo de Datos Detallado
+
+7.1 Entidad: Usuario
+
+Usuario {
+  id_usuario: INTEGER (PK, AUTO_INCREMENT)
+  numero_identificacion: VARCHAR(20) (UNIQUE, NOT NULL)
+  nombre: VARCHAR(100) (NOT NULL)
+  apellido: VARCHAR(100) (NOT NULL)
+  email: VARCHAR(150) (UNIQUE, NOT NULL)
+  telefono: VARCHAR(15)
+  tipo_usuario: ENUM('estudiante', 'profesor', 'bibliotecario') (NOT NULL)
+  fecha_registro: DATETIME (DEFAULT CURRENT_TIMESTAMP)
+  estado: ENUM('activo', 'inactivo', 'suspendido') (DEFAULT 'activo')
+  direccion: TEXT
+  carrera: VARCHAR(100) (aplicable solo a estudiantes)
+  departamento: VARCHAR(100) (aplicable solo a profesores)
+}
+
+7.2 Entidad: Libro
+
+Libro {
+  id_libro: INTEGER (PK, AUTO_INCREMENT)
+  isbn: VARCHAR(20) (UNIQUE, NOT NULL)
+  titulo: VARCHAR(200) (NOT NULL)
+  autor: VARCHAR(150) (NOT NULL)
+  editorial: VARCHAR(100)
+  año_publicacion: INTEGER
+  numero_paginas: INTEGER
+  categoria: VARCHAR(50) (NOT NULL)
+  descripcion: TEXT
+  ubicacion_fisica: VARCHAR(50)
+  fecha_ingreso: DATETIME (DEFAULT CURRENT_TIMESTAMP)
+  estado: ENUM('disponible', 'prestado', 'reservado', 'mantenimiento') (DEFAULT 'disponible')
+}
+
+7.3 Entidad: Copia_Libro
+
+Copia_Libro {
+  id_copia: INTEGER (PK, AUTO_INCREMENT)
+  id_libro: INTEGER (FK -> Libro.id_libro)
+  codigo_copia: VARCHAR(20) (UNIQUE, NOT NULL)
+  estado_copia: ENUM('disponible', 'prestada', 'dañada', 'perdida') (DEFAULT 'disponible')
+  fecha_adquisicion: DATE
+  observaciones: TEXT
+}
+
+7.4 Entidad: Prestamo
+
+Prestamo {
+  id_prestamo: INTEGER (PK, AUTO_INCREMENT)
+  id_usuario: INTEGER (FK -> Usuario.id_usuario)
+  id_copia: INTEGER (FK -> Copia_Libro.id_copia)
+  fecha_prestamo: DATETIME (DEFAULT CURRENT_TIMESTAMP)
+  fecha_vencimiento: DATETIME (NOT NULL)
+  fecha_devolucion: DATETIME (NULL)
+  estado_prestamo: ENUM('activo', 'devuelto', 'vencido') (DEFAULT 'activo')
+  renovaciones: INTEGER (DEFAULT 0)
+  observaciones: TEXT
+}
+
+7.5 Entidad: Reserva
+
+Reserva {
+  id_reserva: INTEGER (PK, AUTO_INCREMENT)
+  id_usuario: INTEGER (FK -> Usuario.id_usuario)
+  id_libro: INTEGER (FK -> Libro.id_libro)
+  fecha_reserva: DATETIME (DEFAULT CURRENT_TIMESTAMP)
+  fecha_vencimiento_reserva: DATETIME (NOT NULL)
+  estado_reserva: ENUM('activa', 'cumplida', 'cancelada', 'vencida') (DEFAULT 'activa')
+  prioridad: INTEGER (DEFAULT 1)
+}
+
+7.6 Entidad: Multa
+
+Multa {
+  id_multa: INTEGER (PK, AUTO_INCREMENT)
+  id_usuario: INTEGER (FK -> Usuario.id_usuario)
+  id_prestamo: INTEGER (FK -> Prestamo.id_prestamo)
+  monto: DECIMAL(8,2) (NOT NULL)
+  fecha_generacion: DATETIME (DEFAULT CURRENT_TIMESTAMP)
+  fecha_pago: DATETIME (NULL)
+  estado_multa: ENUM('pendiente', 'pagada', 'condonada') (DEFAULT 'pendiente')
+  descripcion: TEXT
+}
+
+7.7 Entidad: Notificacion
+
+Notificacion {
+  id_notificacion: INTEGER (PK, AUTO_INCREMENT)
+  id_usuario: INTEGER (FK -> Usuario.id_usuario)
+  tipo_notificacion: ENUM('vencimiento', 'reserva_disponible', 'multa', 'general')
+  titulo: VARCHAR(150) (NOT NULL)
+  mensaje: TEXT (NOT NULL)
+  fecha_creacion: DATETIME (DEFAULT CURRENT_TIMESTAMP)
+  fecha_envio: DATETIME (NULL)
+  leida: BOOLEAN (DEFAULT FALSE)
+  canal: ENUM('email', 'sistema', 'sms') (DEFAULT 'sistema')
+}
+
+8. Reglas de Negocio
+RN-001: Límites de Préstamo
+
+    Estudiantes: Máximo 3 libros simultáneos, 14 días de préstamo
+    Profesores: Máximo 5 libros simultáneos, 30 días de préstamo
+    Renovaciones: Máximo 2 renovaciones por préstamo si no hay reservas pendientes
+
+RN-002: Sistema de Multas
+
+    Cálculo: $5 pesos por día de retraso por libro
+    Suspensión: Usuario suspendido con multas > $100 pesos
+    Restricción: No se permiten nuevos préstamos con multas pendientes
+
+RN-003: Gestión de Reservas
+
+    Tiempo de espera: 48 horas para recoger libro reservado
+    Prioridad: Las reservas se asignan por orden de llegada
+    Límite: Máximo 2 reservas activas por usuario
+
+RN-004: Estados de Libros
+
+    Un libro debe tener al menos una copia disponible para aparecer en búsquedas
+    Los libros en mantenimiento no pueden ser prestados ni reservados
+    Se requiere aprobación del bibliotecario para marcar libros como perdidos
+
+9. Casos de Uso Principales
+CU-001: Realizar Préstamo de Libro
+
+Actor Principal: Bibliotecario Actores Secundarios: Estudiante/Profesor Precondiciones:
+
+    Usuario registrado y activo
+    Libro disponible
+    Usuario sin multas pendientes
+
+Flujo Principal:
+
+    Bibliotecario escanea carnet del usuario
+    Sistema muestra información del usuario y estado
+    Bibliotecario escanea código del libro
+    Sistema verifica disponibilidad y límites
+    Sistema registra el préstamo
+    Sistema actualiza estado del libro a "prestado"
+    Sistema calcula fecha de vencimiento
+    Sistema imprime comprobante
+
+CU-002: Buscar y Reservar Libro
+
+Actor Principal: Estudiante/Profesor Precondiciones: Usuario autenticado
+
+Flujo Principal:
+
+    Usuario ingresa criterios de búsqueda
+    Sistema muestra resultados
+    Usuario selecciona libro deseado
+    Si no está disponible, usuario solicita reserva
+    Sistema registra la reserva
+    Sistema envía confirmación
+
+10. Interfaces del Sistema
+10.1 Interfaz de Usuario Web
+
+    Dashboard principal con acceso rápido a funciones frecuentes
+    Módulo de búsqueda con filtros avanzados
+    Panel de usuario para gestionar préstamos y reservas
+    Panel administrativo para bibliotecarios
+
+10.2 APIs REST
+
+    Endpoint de autenticación: /api/auth
+    Gestión de usuarios: /api/users
+    Catálogo de libros: /api/books
+    Préstamos: /api/loans
+    Reservas: /api/reservations
+    Reportes: /api/reports
+
+11. Restricciones y Consideraciones
+
+11.1 Restricciones Técnicas
+
+    Desarrollo en tecnologías web modernas (React/Vue.js frontend, Node.js/Python backend)
+    Base de datos relacional PostgreSQL
+    Implementación de cache Redis para optimización
+    Servicios de email para notificaciones
+
+11.2 Restricciones de Seguridad
+
+    Integración con sistema de autenticación universitario (LDAP/SSO)
+    Cumplimiento con ley de protección de datos
+    Auditoría completa de acciones críticas
+
+12. Criterios de Aceptación
+
+    Funcionalidad: Todos los requerimientos funcionales implementados y probados
+    Rendimiento: Cumplimiento de métricas de performance especificadas
+    Seguridad: Pruebas de penetración exitosas
+    Usabilidad: Pruebas con usuarios reales satisfactorias
+    Documentación: Manual de usuario y documentación técnica completa
+
+13. Plan de Implementación
+
+Fase 1 (Sprints 1-3): Core del Sistema
+
+    Autenticación y gestión de usuarios
+    Catálogo de libros y búsquedas
+    Gestión básica de préstamos
+
+Fase 2 (Sprints 4-6): Funcionalidades Avanzadas
+
+    Sistema de reservas
+    Notificaciones automáticas
+    Gestión de multas
+
+Fase 3 (Sprints 7-8): Optimización y Reportes
+
+    Módulo de reportes
+    Optimizaciones de rendimiento
+    Pruebas integrales y despliegue
+

@@ -1,0 +1,67 @@
+Nombre del Proyecto: TaskFlow – Sistema de Gestión de Tareas Colaborativas
+
+1. Introducción
+
+TaskFlow es una aplicación web destinada a equipos de trabajo que necesitan organizar, asignar, y dar seguimiento a tareas en proyectos colaborativos. El sistema permitirá la gestión de usuarios, la creación y seguimiento de tareas, la visualización de proyectos, y la generación de reportes.
+
+2. Requerimientos Funcionales
+
+RF1. Gestión de Usuarios
+
+    RF1.1: El sistema debe permitir a los usuarios registrarse y autenticarse mediante correo electrónico y contraseña.
+
+    RF1.2: Los usuarios podrán tener roles de Administrador, Colaborador, o Visualizador.
+
+    RF1.3: Los administradores podrán crear, editar o eliminar usuarios del sistema.
+
+RF2. Gestión de Proyectos
+
+    RF2.1: Los usuarios podrán crear nuevos proyectos, especificando nombre, descripción y fecha de inicio/finalización.
+
+    RF2.2: Cada proyecto puede tener múltiples miembros asignados.
+
+    RF2.3: Solo los administradores y colaboradores podrán modificar proyectos.
+
+RF3. Gestión de Tareas
+
+    RF3.1: Las tareas deben poder ser creadas con un título, descripción, estado, prioridad y fecha límite.
+
+    RF3.2: Cada tarea debe estar asociada a un proyecto y un responsable.
+
+    RF3.3: Los estados permitidos de una tarea son: Pendiente, En progreso, Bloqueada, Finalizada.
+
+RF4. Notificaciones y Seguimiento
+
+    RF4.1: El sistema debe enviar notificaciones por correo al responsable cuando se le asigne una tarea.
+
+    RF4.2: Los usuarios deben recibir alertas internas cuando una tarea cambie de estado.
+
+RF5. Reportes y Visualización
+
+    RF5.1: El sistema debe generar reportes en PDF con estadísticas de avance por proyecto.
+
+    RF5.2: Debe ofrecer un tablero tipo Kanban para visualizar tareas por estado.
+
+3. Requerimientos No Funcionales
+
+RNF1. Rendimiento
+
+    El sistema debe responder a cualquier solicitud en menos de 2 segundos bajo carga normal (hasta 100 usuarios concurrentes).
+
+RNF2. Seguridad
+
+    Las contraseñas deben almacenarse usando hashing seguro (bcrypt o equivalente).
+
+    El sistema debe proteger todas las rutas sensibles mediante HTTPS y autenticación JWT.
+
+RNF3. Usabilidad
+
+    La interfaz debe ser accesible desde navegadores modernos y adaptarse a dispositivos móviles.
+
+RNF4. Mantenibilidad
+
+    El código debe seguir principios SOLID y contar con pruebas unitarias cubriendo al menos el 70% del código.
+
+RNF5. Disponibilidad
+
+    El sistema debe estar disponible el 99.5% del tiempo mensual.

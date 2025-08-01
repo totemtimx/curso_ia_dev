@@ -1,0 +1,82 @@
+Enunciado de Requisito - Sistema de Reportes
+Feature: Generación de Reportes de Ventas Mensuales
+
+Como gerente de ventas
+Quiero generar reportes mensuales de ventas con filtros personalizables
+Para analizar el desempeño del equipo y tomar decisiones estratégicas basadas en datos
+Scenario: Generar reporte básico de ventas del mes actual
+gherkin
+
+Given que soy un usuario autenticado con rol de "Gerente de Ventas"
+And tengo acceso al módulo de reportes
+When selecciono "Generar Reporte de Ventas"
+And elijo el período "Mes Actual"
+And hago clic en "Generar"
+Then el sistema debe mostrar un reporte con las siguientes métricas:
+  | Métrica | Descripción |
+  | Total de Ventas | Suma total de ventas en pesos |
+  | Número de Transacciones | Cantidad de ventas realizadas |
+  | Ticket Promedio | Valor promedio por venta |
+  | Vendedor Top | Vendedor con mayores ventas |
+And el reporte debe incluir gráficos de barras y tendencias
+And debe permitir exportar en formato PDF y Excel
+
+Scenario: Aplicar filtros avanzados al reporte
+gherkin
+
+Given que estoy en la pantalla de generación de reportes
+When selecciono los siguientes filtros:
+  | Campo | Valor |
+  | Período | 01/01/2024 a 31/03/2024 |
+  | Sucursal | Sucursal Centro |
+  | Categoría Producto | Electrónicos |
+  | Vendedor | Juan Pérez, María García |
+And hago clic en "Aplicar Filtros"
+Then el sistema debe mostrar únicamente los datos que cumplan con todos los criterios
+And debe indicar claramente los filtros aplicados en el encabezado del reporte
+And el tiempo de respuesta no debe exceder los 10 segundos
+
+Scenario: Exportar reporte con datos sensibles
+gherkin
+
+Given que he generado un reporte de ventas
+And el reporte contiene información confidencial de comisiones
+When selecciono "Exportar a PDF"
+Then el sistema debe solicitar confirmación de exportación
+And debe aplicar marca de agua "CONFIDENCIAL" en cada página
+And debe registrar la acción en el log de auditoría
+And debe enviar notificación al administrador del sistema
+
+Scenario: Manejar error cuando no hay datos disponibles
+gherkin
+
+Given que selecciono un período de fechas válido
+When el período seleccionado no contiene transacciones de venta
+And hago clic en "Generar"
+Then el sistema debe mostrar el mensaje "No se encontraron datos para el período seleccionado"
+And debe sugerir ampliar el rango de fechas
+And debe permitir modificar los filtros sin perder la configuración actual
+
+Información Adicional para Análisis de Requisitos
+Criterios de Aceptación Generales:
+
+    El sistema debe ser responsive y funcionar en dispositivos móviles
+    Los reportes deben cargarse en menos de 15 segundos
+    Debe soportar concurrencia de hasta 50 usuarios simultáneos
+    La información debe estar actualizada en tiempo real
+    Debe cumplir con estándares de accesibilidad WCAG 2.1
+
+Reglas de Negocio:
+
+    Solo usuarios con rol "Gerente" o superior pueden acceder a reportes consolidados
+    Los datos de comisiones solo son visibles para gerentes y administradores
+    Los reportes históricos están limitados a los últimos 24 meses
+    Las exportaciones quedan registradas por motivos de auditoría
+
+Dependencias Técnicas:
+
+    Integración con base de datos de ventas existente
+    Conexión con sistema de autenticación LDAP
+    Librería de gráficos compatible con navegadores modernos
+    Servicio de generación de PDFs
+

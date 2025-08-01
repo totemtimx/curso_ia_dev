@@ -1,0 +1,19 @@
+Como gerente de operaciones de nuestra empresa de logística, necesito un sistema de reportes que me permita monitorear y analizar el desempeño de nuestras rutas de entrega.
+
+Actualmente manejamos toda la información en hojas de cálculo separadas y es muy difícil obtener una visión integral de nuestras operaciones.
+
+Requiero reportes que muestren métricas clave como tiempos de entrega promedio por ruta, costos operativos por zona geográfica, eficiencia de los conductores, y análisis de demanda por período. 
+
+También necesito poder comparar el rendimiento entre diferentes sucursales y generar alertas cuando ciertos indicadores estén fuera de los rangos aceptables.
+
+Los reportes deben poder generarse de forma automática diariamente, semanalmente y mensualmente, con la opción de exportar a PDF y Excel para compartir con la dirección general. 
+
+Además, necesito que sean accesibles desde dispositivos móviles ya que frecuentemente estoy fuera de la oficina supervisando operaciones.
+
+Me gustaría que el sistema pueda integrar datos de nuestro sistema de GPS, el ERP actual, y las bases de datos de clientes. 
+
+También sería valioso tener capacidades de predicción para anticipar picos de demanda y optimizar la asignación de recursos.
+
+El presupuesto es limitado y necesitamos tener la solución funcionando en un plazo máximo de 4 meses. 
+
+¿Pueden ayudarnos a desarrollar esta solución de reportes?

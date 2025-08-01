@@ -1,0 +1,53 @@
+Sistema de Gestión de Biblioteca Digital
+
+Descripción General
+
+Un sistema de gestión de biblioteca digital que permite a los usuarios buscar, reservar y gestionar préstamos de libros electrónicos. El sistema debe manejar múltiples tipos de usuarios (estudiantes, profesores, bibliotecarios) con diferentes permisos y funcionalidades.
+Componentes Principales
+Base de Datos:
+
+Catálogo de libros (título, autor, ISBN, categoría, disponibilidad, formato digital)
+Usuarios registrados con perfiles y historial de préstamos
+Sistema de reservas y colas de espera
+Registro de transacciones y multas
+
+Funcionalidades por Tipo de Usuario:
+Estudiantes:
+
+Búsqueda avanzada por título, autor, categoría o palabras clave
+Reserva de hasta 3 libros simultáneamente
+Descarga temporal de libros (7 días de préstamo)
+Renovación automática si no hay lista de espera
+Historial personal de lecturas
+
+Profesores:
+
+Mismas funcionalidades que estudiantes
+Límite extendido de 10 libros
+Préstamos de 30 días
+Creación de listas de lectura para cursos
+Solicitud de adquisición de nuevos títulos
+
+Bibliotecarios:
+
+Gestión completa del catálogo
+Administración de usuarios y permisos
+Generación de reportes de uso
+Configuración de políticas de préstamo
+Gestión de multas y sanciones
+
+Características Técnicas:
+
+API REST para integración con sistemas externos
+Notificaciones automáticas por email
+Sistema de recomendaciones basado en historial
+Backup automático diario
+Interfaz web responsive y aplicación móvil
+Integración con sistemas de autenticación institucional
+
+Reglas de Negocio:
+
+Los libros populares tienen límite de 1 copia por usuario
+Sistema de multas por retraso (bloqueado después de 7 días)
+Reservas expiran en 48 horas si no se descargan
+Contenido con derechos de autor requiere verificación de IP institucional

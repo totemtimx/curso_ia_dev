@@ -1,0 +1,1055 @@
+{
+  "productos": [
+    {
+      "id": "16b435b6-4f7b-4a92-a235-9b8a6aa3c57d",
+      "nombre": "Laptop HP Pavilion",
+      "precio": 899.99,
+      "stock": 15,
+      "categoria": "Electrónicos",
+      "fecha_creacion": "2025-07-20 13:18:57"
+    },
+    {
+      "id": "504cf3a2-c2da-401e-abc4-62854705b696",
+      "nombre": "Mouse Inalámbrico Logitech",
+      "precio": 29.99,
+      "stock": 50,
+      "categoria": "Accesorios",
+      "fecha_creacion": "2025-07-26 13:18:57"
+    },
+    {
+      "id": "1c14f6ea-7d55-4814-be5b-85f9312e5e1c",
+      "nombre": "Teclado Mecánico RGB",
+      "precio": 89.99,
+      "stock": 25,
+      "categoria": "Accesorios",
+      "fecha_creacion": "2025-07-26 13:18:57"
+    },
+    {
+      "id": "22548382-e641-4126-aa93-1f17228fbeec",
+      "nombre": "Monitor Samsung 24\"",
+      "precio": 199.99,
+      "stock": 20,
+      "categoria": "Electrónicos",
+      "fecha_creacion": "2025-06-14 13:18:57"
+    },
+    {
+      "id": "44632356-157c-4378-abf2-4c1d439c23cf",
+      "nombre": "Auriculares Sony WH-1000XM4",
+      "precio": 349.99,
+      "stock": 10,
+      "categoria": "Audio",
+      "fecha_creacion": "2025-07-24 13:18:57"
+    },
+    {
+      "id": "152e8301-91f5-40b1-ab1d-8df9661e1cfc",
+      "nombre": "Cable HDMI 2m",
+      "precio": 12.99,
+      "stock": 100,
+      "categoria": "Cables",
+      "fecha_creacion": "2025-06-26 13:18:57"
+    },
+    {
+      "id": "c8230a60-1c9e-48b6-ab37-7b086edeb865",
+      "nombre": "Webcam Logitech C920",
+      "precio": 79.99,
+      "stock": 30,
+      "categoria": "Video",
+      "fecha_creacion": "2025-07-02 13:18:57"
+    },
+    {
+      "id": "eda59c85-7483-4cd7-9fe9-61a80355f0da",
+      "nombre": "Disco Duro Externo 1TB",
+      "precio": 59.99,
+      "stock": 40,
+      "categoria": "Almacenamiento",
+      "fecha_creacion": "2025-07-30 13:18:57"
+    },
+    {
+      "id": "91bda223-f111-430f-ae1a-0dd60aa9d702",
+      "nombre": "Memoria RAM 8GB DDR4",
+      "precio": 45.99,
+      "stock": 35,
+      "categoria": "Componentes",
+      "fecha_creacion": "2025-07-06 13:18:57"
+    },
+    {
+      "id": "819d6cc0-a2d3-44c5-a206-876998ffb424",
+      "nombre": "Fuente de Poder 650W",
+      "precio": 89.99,
+      "stock": 15,
+      "categoria": "Componentes",
+      "fecha_creacion": "2025-07-11 13:18:57"
+    },
+    {
+      "id": "596297b8-da05-4d3b-b5a8-75ce4e079891",
+      "nombre": "Mouse Gaming Razer DeathAdder",
+      "precio": 69.99,
+      "stock": 20,
+      "categoria": "Gaming",
+      "fecha_creacion": "2025-07-09 13:20:08"
+    },
+    {
+      "id": "7736893e-a8a5-48d8-a476-9b208f5f3c97",
+      "nombre": "Teclado Gaming Corsair K70",
+      "precio": 149.99,
+      "stock": 12,
+      "categoria": "Gaming",
+      "fecha_creacion": "2025-06-02 13:20:08"
+    },
+    {
+      "id": "f0d19d20-0dca-42d4-ac68-08faf50ddaa4",
+      "nombre": "Headset Gaming HyperX Cloud II",
+      "precio": 89.99,
+      "stock": 18,
+      "categoria": "Gaming",
+      "fecha_creacion": "2025-07-08 13:20:08"
+    },
+    {
+      "id": "6679206b-2046-424c-814b-3557d726a973",
+      "nombre": "Impresora HP LaserJet Pro",
+      "precio": 299.99,
+      "stock": 8,
+      "categoria": "Oficina",
+      "fecha_creacion": "2025-07-11 13:20:08"
+    },
+    {
+      "id": "1dcef649-44cc-434c-8688-a82bb640554f",
+      "nombre": "Escáner Canon CanoScan",
+      "precio": 129.99,
+      "stock": 15,
+      "categoria": "Oficina",
+      "fecha_creacion": "2025-07-16 13:20:08"
+    },
+    {
+      "id": "60ecbe38-853d-4c23-9f0a-f6ed5401c7c0",
+      "nombre": "Proyector Epson PowerLite",
+      "precio": 599.99,
+      "stock": 5,
+      "categoria": "Oficina",
+      "fecha_creacion": "2025-07-29 13:20:08"
+    },
+    {
+      "id": "2365ab11-a1f1-4985-b2c1-7010eb46880b",
+      "nombre": "Router WiFi TP-Link Archer",
+      "precio": 79.99,
+      "stock": 25,
+      "categoria": "Red",
+      "fecha_creacion": "2025-07-28 13:20:08"
+    },
+    {
+      "id": "93ede39d-b62f-456a-a8e0-cf35b825cf42",
+      "nombre": "Switch Gigabit Netgear",
+      "precio": 45.99,
+      "stock": 30,
+      "categoria": "Red",
+      "fecha_creacion": "2025-07-26 13:20:08"
+    },
+    {
+      "id": "414eb8df-e4f2-4b86-a287-640e8cd254ba",
+      "nombre": "Cable de Red Cat6 100m",
+      "precio": 35.99,
+      "stock": 50,
+      "categoria": "Red",
+      "fecha_creacion": "2025-06-04 13:20:08"
+    },
+    {
+      "id": "aed41686-5a70-421f-810d-98f3d2238004",
+      "nombre": "Cámara IP Hikvision",
+      "precio": 89.99,
+      "stock": 22,
+      "categoria": "Seguridad",
+      "fecha_creacion": "2025-06-30 13:20:08"
+    },
+    {
+      "id": "9d48aa42-198f-44a4-9ca8-ea31511ea386",
+      "nombre": "DVR 8 Canales",
+      "precio": 199.99,
+      "stock": 10,
+      "categoria": "Seguridad",
+      "fecha_creacion": "2025-06-19 13:20:08"
+    },
+    {
+      "id": "c3ff6529-c8ad-4647-995f-c83eebacbd56",
+      "nombre": "Sensor de Movimiento PIR",
+      "precio": 25.99,
+      "stock": 40,
+      "categoria": "Seguridad",
+      "fecha_creacion": "2025-06-15 13:20:08"
+    }
+  ],
+  "clientes": [
+    {
+      "id": "63d7846d-c36b-4c13-aade-b25eb4195892",
+      "nombre": "María González",
+      "email": "maria.gonzalez@email.com",
+      "telefono": "+52 55 1234 5678",
+      "fecha_registro": "2025-06-01 13:18:57"
+    },
+    {
+      "id": "a6f0a2cc-e107-4eb0-ab15-89e05b55ac26",
+      "nombre": "Carlos Rodríguez",
+      "email": "carlos.rodriguez@email.com",
+      "telefono": "+52 55 2345 6789",
+      "fecha_registro": "2025-07-24 13:18:57"
+    },
+    {
+      "id": "6aa86a43-864a-4da8-a686-1ac8d1ddf872",
+      "nombre": "Ana Martínez",
+      "email": "ana.martinez@email.com",
+      "telefono": "+52 55 3456 7890",
+      "fecha_registro": "2025-05-21 13:18:57"
+    },
+    {
+      "id": "76264321-4a91-4cbc-ae1a-aaf02b6123b9",
+      "nombre": "Luis Pérez",
+      "email": "luis.perez@email.com",
+      "telefono": "+52 55 4567 8901",
+      "fecha_registro": "2025-06-02 13:18:57"
+    },
+    {
+      "id": "b6fa575e-5e6a-40fd-a5f2-e22bac7672b3",
+      "nombre": "Sofia López",
+      "email": "sofia.lopez@email.com",
+      "telefono": "+52 55 5678 9012",
+      "fecha_registro": "2025-07-11 13:18:57"
+    },
+    {
+      "id": "b769cdfe-5aae-43ba-88cc-d495c6df3e83",
+      "nombre": "Diego Hernández",
+      "email": "diego.hernandez@email.com",
+      "telefono": "+52 55 6789 0123",
+      "fecha_registro": "2025-05-19 13:18:57"
+    },
+    {
+      "id": "4e30b59f-fc1f-4378-aec6-275a0de9dd59",
+      "nombre": "Valentina Torres",
+      "email": "valentina.torres@email.com",
+      "telefono": "+52 55 7890 1234",
+      "fecha_registro": "2025-05-28 13:18:57"
+    },
+    {
+      "id": "09f98f19-ccc8-4cda-93d2-a03f6fbd16ad",
+      "nombre": "Roberto Silva",
+      "email": "roberto.silva@email.com",
+      "telefono": "+52 55 8901 2345",
+      "fecha_registro": "2025-06-28 13:18:57"
+    },
+    {
+      "id": "401a4d63-c230-46e6-89c7-ff5c21311a0e",
+      "nombre": "Empresa ABC S.A.",
+      "email": "compras@empresaabc.com",
+      "telefono": "+52 55 1111 2222",
+      "fecha_registro": "2025-06-22 13:20:08"
+    },
+    {
+      "id": "0a7c8f15-d03a-4f33-b3e6-3f206f49475e",
+      "nombre": "Universidad Tecnológica",
+      "email": "ti@universidad.edu.mx",
+      "telefono": "+52 55 3333 4444",
+      "fecha_registro": "2025-05-17 13:20:08"
+    },
+    {
+      "id": "fcd7fd53-2227-4885-8763-6e670d07c907",
+      "nombre": "Clínica Médica Central",
+      "email": "sistemas@clinicacentral.com",
+      "telefono": "+52 55 5555 6666",
+      "fecha_registro": "2025-07-28 13:20:08"
+    },
+    {
+      "id": "7fbde622-1895-414f-b54e-6a17ff5e4d5b",
+      "nombre": "Restaurante El Buen Sabor",
+      "email": "admin@elbuensabor.com",
+      "telefono": "+52 55 7777 8888",
+      "fecha_registro": "2025-06-14 13:20:08"
+    },
+    {
+      "id": "1b982a50-f0eb-4064-b86c-de0ccf4fc6e3",
+      "nombre": "Hotel Plaza Mayor",
+      "email": "recepcion@hotelplaza.com",
+      "telefono": "+52 55 9999 0000",
+      "fecha_registro": "2025-06-09 13:20:08"
+    }
+  ],
+  "ventas": [
+    {
+      "id": "f393da3d-c3ce-469a-bc15-1f0ed8fd7cc4",
+      "cliente_id": "4e30b59f-fc1f-4378-aec6-275a0de9dd59",
+      "items": [
+        {
+          "producto_id": "819d6cc0-a2d3-44c5-a206-876998ffb424",
+          "cantidad": 2,
+          "precio_unitario": 89.99
+        }
+      ],
+      "total": 179.98,
+      "fecha": "2025-07-24 13:18:57",
+      "estado": "pendiente"
+    },
+    {
+      "id": "3dd8a801-072e-401c-97e8-e8e5b8d0bf06",
+      "cliente_id": "b6fa575e-5e6a-40fd-a5f2-e22bac7672b3",
+      "items": [
+        {
+          "producto_id": "c8230a60-1c9e-48b6-ab37-7b086edeb865",
+          "cantidad": 1,
+          "precio_unitario": 79.99
+        }
+      ],
+      "total": 79.99,
+      "fecha": "2025-07-06 13:18:57",
+      "estado": "pendiente"
+    },
+    {
+      "id": "3db1f7a9-9a2b-465b-928f-908bce900a4b",
+      "cliente_id": "76264321-4a91-4cbc-ae1a-aaf02b6123b9",
+      "items": [
+        {
+          "producto_id": "91bda223-f111-430f-ae1a-0dd60aa9d702",
+          "cantidad": 1,
+          "precio_unitario": 45.99
+        },
+        {
+          "producto_id": "16b435b6-4f7b-4a92-a235-9b8a6aa3c57d",
+          "cantidad": 2,
+          "precio_unitario": 899.99
+        }
+      ],
+      "total": 1845.97,
+      "fecha": "2025-07-28 13:18:57",
+      "estado": "pendiente"
+    },
+    {
+      "id": "3b5f68bb-945b-4049-aa84-6b3e6e2f5cde",
+      "cliente_id": "4e30b59f-fc1f-4378-aec6-275a0de9dd59",
+      "items": [
+        {
+          "producto_id": "c8230a60-1c9e-48b6-ab37-7b086edeb865",
+          "cantidad": 2,
+          "precio_unitario": 79.99
+        },
+        {
+          "producto_id": "819d6cc0-a2d3-44c5-a206-876998ffb424",
+          "cantidad": 1,
+          "precio_unitario": 89.99
+        },
+        {
+          "producto_id": "eda59c85-7483-4cd7-9fe9-61a80355f0da",
+          "cantidad": 2,
+          "precio_unitario": 59.99
+        },
+        {
+          "producto_id": "504cf3a2-c2da-401e-abc4-62854705b696",
+          "cantidad": 2,
+          "precio_unitario": 29.99
+        }
+      ],
+      "total": 429.93,
+      "fecha": "2025-07-27 13:18:57",
+      "estado": "cancelada"
+    },
+    {
+      "id": "50843c3f-b381-410e-8617-f34b411144c6",
+      "cliente_id": "b769cdfe-5aae-43ba-88cc-d495c6df3e83",
+      "items": [
+        {
+          "producto_id": "1c14f6ea-7d55-4814-be5b-85f9312e5e1c",
+          "cantidad": 1,
+          "precio_unitario": 89.99
+        },
+        {
+          "producto_id": "152e8301-91f5-40b1-ab1d-8df9661e1cfc",
+          "cantidad": 2,
+          "precio_unitario": 12.99
+        },
+        {
+          "producto_id": "22548382-e641-4126-aa93-1f17228fbeec",
+          "cantidad": 2,
+          "precio_unitario": 199.99
+        },
+        {
+          "producto_id": "504cf3a2-c2da-401e-abc4-62854705b696",
+          "cantidad": 2,
+          "precio_unitario": 29.99
+        }
+      ],
+      "total": 575.93,
+      "fecha": "2025-07-01 13:18:57",
+      "estado": "pendiente"
+    },
+    {
+      "id": "0e6c893b-933b-48a0-9f74-4767011b4b99",
+      "cliente_id": "6aa86a43-864a-4da8-a686-1ac8d1ddf872",
+      "items": [
+        {
+          "producto_id": "819d6cc0-a2d3-44c5-a206-876998ffb424",
+          "cantidad": 2,
+          "precio_unitario": 89.99
+        },
+        {
+          "producto_id": "1c14f6ea-7d55-4814-be5b-85f9312e5e1c",
+          "cantidad": 3,
+          "precio_unitario": 89.99
+        }
+      ],
+      "total": 449.95,
+      "fecha": "2025-07-10 13:18:57",
+      "estado": "cancelada"
+    },
+    {
+      "id": "d25d2629-daa6-4c17-9510-e93fb0afff11",
+      "cliente_id": "b6fa575e-5e6a-40fd-a5f2-e22bac7672b3",
+      "items": [
+        {
+          "producto_id": "c8230a60-1c9e-48b6-ab37-7b086edeb865",
+          "cantidad": 3,
+          "precio_unitario": 79.99
+        },
+        {
+          "producto_id": "152e8301-91f5-40b1-ab1d-8df9661e1cfc",
+          "cantidad": 3,
+          "precio_unitario": 12.99
+        },
+        {
+          "producto_id": "16b435b6-4f7b-4a92-a235-9b8a6aa3c57d",
+          "cantidad": 3,
+          "precio_unitario": 899.99
+        },
+        {
+          "producto_id": "22548382-e641-4126-aa93-1f17228fbeec",
+          "cantidad": 1,
+          "precio_unitario": 199.99
+        }
+      ],
+      "total": 3178.9,
+      "fecha": "2025-07-17 13:18:57",
+      "estado": "completada"
+    },
+    {
+      "id": "de5323ba-b5b7-48e9-b863-827aaf4ddc75",
+      "cliente_id": "b769cdfe-5aae-43ba-88cc-d495c6df3e83",
+      "items": [
+        {
+          "producto_id": "91bda223-f111-430f-ae1a-0dd60aa9d702",
+          "cantidad": 3,
+          "precio_unitario": 45.99
+        }
+      ],
+      "total": 137.97,
+      "fecha": "2025-07-20 13:18:57",
+      "estado": "cancelada"
+    },
+    {
+      "id": "b388e656-3e63-470a-8ca6-da214769a6fb",
+      "cliente_id": "b769cdfe-5aae-43ba-88cc-d495c6df3e83",
+      "items": [
+        {
+          "producto_id": "c8230a60-1c9e-48b6-ab37-7b086edeb865",
+          "cantidad": 3,
+          "precio_unitario": 79.99
+        },
+        {
+          "producto_id": "22548382-e641-4126-aa93-1f17228fbeec",
+          "cantidad": 3,
+          "precio_unitario": 199.99
+        },
+        {
+          "producto_id": "152e8301-91f5-40b1-ab1d-8df9661e1cfc",
+          "cantidad": 2,
+          "precio_unitario": 12.99
+        }
+      ],
+      "total": 865.92,
+      "fecha": "2025-07-01 13:18:57",
+      "estado": "cancelada"
+    },
+    {
+      "id": "106d3f85-814f-44ff-8853-f080f62abe98",
+      "cliente_id": "b769cdfe-5aae-43ba-88cc-d495c6df3e83",
+      "items": [
+        {
+          "producto_id": "91bda223-f111-430f-ae1a-0dd60aa9d702",
+          "cantidad": 3,
+          "precio_unitario": 45.99
+        },
+        {
+          "producto_id": "22548382-e641-4126-aa93-1f17228fbeec",
+          "cantidad": 3,
+          "precio_unitario": 199.99
+        }
+      ],
+      "total": 737.94,
+      "fecha": "2025-07-10 13:18:57",
+      "estado": "completada"
+    },
+    {
+      "id": "17e2980a-eb28-4de5-bcfb-261a4862b2e1",
+      "cliente_id": "6aa86a43-864a-4da8-a686-1ac8d1ddf872",
+      "items": [
+        {
+          "producto_id": "c8230a60-1c9e-48b6-ab37-7b086edeb865",
+          "cantidad": 1,
+          "precio_unitario": 79.99
+        },
+        {
+          "producto_id": "504cf3a2-c2da-401e-abc4-62854705b696",
+          "cantidad": 3,
+          "precio_unitario": 29.99
+        }
+      ],
+      "total": 169.96,
+      "fecha": "2025-07-03 13:18:57",
+      "estado": "cancelada"
+    },
+    {
+      "id": "1259c87e-a50b-47dd-9dc4-c4b27ba1790b",
+      "cliente_id": "6aa86a43-864a-4da8-a686-1ac8d1ddf872",
+      "items": [
+        {
+          "producto_id": "eda59c85-7483-4cd7-9fe9-61a80355f0da",
+          "cantidad": 2,
+          "precio_unitario": 59.99
+        },
+        {
+          "producto_id": "22548382-e641-4126-aa93-1f17228fbeec",
+          "cantidad": 2,
+          "precio_unitario": 199.99
+        }
+      ],
+      "total": 519.96,
+      "fecha": "2025-07-06 13:18:57",
+      "estado": "completada"
+    },
+    {
+      "id": "d25b959e-f2b5-4d1b-9122-db219e58b0aa",
+      "cliente_id": "b769cdfe-5aae-43ba-88cc-d495c6df3e83",
+      "items": [
+        {
+          "producto_id": "22548382-e641-4126-aa93-1f17228fbeec",
+          "cantidad": 3,
+          "precio_unitario": 199.99
+        },
+        {
+          "producto_id": "1c14f6ea-7d55-4814-be5b-85f9312e5e1c",
+          "cantidad": 3,
+          "precio_unitario": 89.99
+        }
+      ],
+      "total": 869.94,
+      "fecha": "2025-07-18 13:18:57",
+      "estado": "completada"
+    },
+    {
+      "id": "3c7fa081-1c2f-42ad-b4ae-7b4a7cfa43a4",
+      "cliente_id": "b6fa575e-5e6a-40fd-a5f2-e22bac7672b3",
+      "items": [
+        {
+          "producto_id": "504cf3a2-c2da-401e-abc4-62854705b696",
+          "cantidad": 3,
+          "precio_unitario": 29.99
+        },
+        {
+          "producto_id": "152e8301-91f5-40b1-ab1d-8df9661e1cfc",
+          "cantidad": 1,
+          "precio_unitario": 12.99
+        },
+        {
+          "producto_id": "16b435b6-4f7b-4a92-a235-9b8a6aa3c57d",
+          "cantidad": 1,
+          "precio_unitario": 899.99
+        },
+        {
+          "producto_id": "eda59c85-7483-4cd7-9fe9-61a80355f0da",
+          "cantidad": 2,
+          "precio_unitario": 59.99
+        }
+      ],
+      "total": 1122.93,
+      "fecha": "2025-07-11 13:18:57",
+      "estado": "pendiente"
+    },
+    {
+      "id": "0c573a35-2eb8-4da8-b935-afeed9c228e4",
+      "cliente_id": "63d7846d-c36b-4c13-aade-b25eb4195892",
+      "items": [
+        {
+          "producto_id": "819d6cc0-a2d3-44c5-a206-876998ffb424",
+          "cantidad": 3,
+          "precio_unitario": 89.99
+        },
+        {
+          "producto_id": "504cf3a2-c2da-401e-abc4-62854705b696",
+          "cantidad": 3,
+          "precio_unitario": 29.99
+        },
+        {
+          "producto_id": "1c14f6ea-7d55-4814-be5b-85f9312e5e1c",
+          "cantidad": 1,
+          "precio_unitario": 89.99
+        },
+        {
+          "producto_id": "22548382-e641-4126-aa93-1f17228fbeec",
+          "cantidad": 1,
+          "precio_unitario": 199.99
+        }
+      ],
+      "total": 649.92,
+      "fecha": "2025-07-21 13:18:57",
+      "estado": "cancelada"
+    },
+    {
+      "id": "65686f63-5ca1-4a96-a6a0-24edfad9f5ab",
+      "cliente_id": "63d7846d-c36b-4c13-aade-b25eb4195892",
+      "items": [
+        {
+          "producto_id": "152e8301-91f5-40b1-ab1d-8df9661e1cfc",
+          "cantidad": 3,
+          "precio_unitario": 12.99
+        },
+        {
+          "producto_id": "504cf3a2-c2da-401e-abc4-62854705b696",
+          "cantidad": 2,
+          "precio_unitario": 29.99
+        }
+      ],
+      "total": 98.95,
+      "fecha": "2025-07-07 13:18:57",
+      "estado": "pendiente"
+    },
+    {
+      "id": "f56a5f13-6630-4f87-9a52-dd1c279d64dd",
+      "cliente_id": "b769cdfe-5aae-43ba-88cc-d495c6df3e83",
+      "items": [
+        {
+          "producto_id": "504cf3a2-c2da-401e-abc4-62854705b696",
+          "cantidad": 2,
+          "precio_unitario": 29.99
+        },
+        {
+          "producto_id": "22548382-e641-4126-aa93-1f17228fbeec",
+          "cantidad": 1,
+          "precio_unitario": 199.99
+        },
+        {
+          "producto_id": "eda59c85-7483-4cd7-9fe9-61a80355f0da",
+          "cantidad": 2,
+          "precio_unitario": 59.99
+        }
+      ],
+      "total": 379.95,
+      "fecha": "2025-07-12 13:18:57",
+      "estado": "pendiente"
+    },
+    {
+      "id": "29451e38-38f9-4718-9068-54959c265e38",
+      "cliente_id": "09f98f19-ccc8-4cda-93d2-a03f6fbd16ad",
+      "items": [
+        {
+          "producto_id": "44632356-157c-4378-abf2-4c1d439c23cf",
+          "cantidad": 1,
+          "precio_unitario": 349.99
+        },
+        {
+          "producto_id": "16b435b6-4f7b-4a92-a235-9b8a6aa3c57d",
+          "cantidad": 3,
+          "precio_unitario": 899.99
+        },
+        {
+          "producto_id": "eda59c85-7483-4cd7-9fe9-61a80355f0da",
+          "cantidad": 2,
+          "precio_unitario": 59.99
+        }
+      ],
+      "total": 3169.94,
+      "fecha": "2025-07-01 13:18:57",
+      "estado": "cancelada"
+    },
+    {
+      "id": "3a1978de-4b68-42c3-8c83-67b4fe92935d",
+      "cliente_id": "76264321-4a91-4cbc-ae1a-aaf02b6123b9",
+      "items": [
+        {
+          "producto_id": "c8230a60-1c9e-48b6-ab37-7b086edeb865",
+          "cantidad": 3,
+          "precio_unitario": 79.99
+        },
+        {
+          "producto_id": "eda59c85-7483-4cd7-9fe9-61a80355f0da",
+          "cantidad": 2,
+          "precio_unitario": 59.99
+        },
+        {
+          "producto_id": "819d6cc0-a2d3-44c5-a206-876998ffb424",
+          "cantidad": 2,
+          "precio_unitario": 89.99
+        },
+        {
+          "producto_id": "152e8301-91f5-40b1-ab1d-8df9661e1cfc",
+          "cantidad": 3,
+          "precio_unitario": 12.99
+        }
+      ],
+      "total": 578.9,
+      "fecha": "2025-07-11 13:18:57",
+      "estado": "completada"
+    },
+    {
+      "id": "b3d8521c-7cd4-4c7d-8960-c0e138c4e6d9",
+      "cliente_id": "4e30b59f-fc1f-4378-aec6-275a0de9dd59",
+      "items": [
+        {
+          "producto_id": "91bda223-f111-430f-ae1a-0dd60aa9d702",
+          "cantidad": 2,
+          "precio_unitario": 45.99
+        },
+        {
+          "producto_id": "819d6cc0-a2d3-44c5-a206-876998ffb424",
+          "cantidad": 3,
+          "precio_unitario": 89.99
+        }
+      ],
+      "total": 361.95,
+      "fecha": "2025-07-01 13:18:57",
+      "estado": "completada"
+    },
+    {
+      "id": "7c5dbaa8-9953-4fa7-b9bd-765e917c4e89",
+      "cliente_id": "7fbde622-1895-414f-b54e-6a17ff5e4d5b",
+      "items": [
+        {
+          "producto_id": "44632356-157c-4378-abf2-4c1d439c23cf",
+          "cantidad": 1,
+          "precio_unitario": 349.99
+        }
+      ],
+      "total": 349.99,
+      "fecha": "2025-07-18 13:20:08",
+      "estado": "cancelada"
+    },
+    {
+      "id": "2c211443-e11c-4a27-8239-ff97e2896ee7",
+      "cliente_id": "b6fa575e-5e6a-40fd-a5f2-e22bac7672b3",
+      "items": [
+        {
+          "producto_id": "9d48aa42-198f-44a4-9ca8-ea31511ea386",
+          "cantidad": 1,
+          "precio_unitario": 199.99
+        },
+        {
+          "producto_id": "1dcef649-44cc-434c-8688-a82bb640554f",
+          "cantidad": 4,
+          "precio_unitario": 129.99
+        }
+      ],
+      "total": 719.95,
+      "fecha": "2025-07-17 13:20:08",
+      "estado": "cancelada"
+    },
+    {
+      "id": "6628b227-aad6-4d25-b96b-491420ee85ee",
+      "cliente_id": "401a4d63-c230-46e6-89c7-ff5c21311a0e",
+      "items": [
+        {
+          "producto_id": "eda59c85-7483-4cd7-9fe9-61a80355f0da",
+          "cantidad": 2,
+          "precio_unitario": 59.99
+        },
+        {
+          "producto_id": "60ecbe38-853d-4c23-9f0a-f6ed5401c7c0",
+          "cantidad": 5,
+          "precio_unitario": 599.99
+        }
+      ],
+      "total": 3119.93,
+      "fecha": "2025-07-06 13:20:08",
+      "estado": "cancelada"
+    },
+    {
+      "id": "f8340860-e13d-494e-90d9-b97e23ca4859",
+      "cliente_id": "6aa86a43-864a-4da8-a686-1ac8d1ddf872",
+      "items": [
+        {
+          "producto_id": "504cf3a2-c2da-401e-abc4-62854705b696",
+          "cantidad": 4,
+          "precio_unitario": 29.99
+        }
+      ],
+      "total": 119.96,
+      "fecha": "2025-07-12 13:20:08",
+      "estado": "pendiente"
+    },
+    {
+      "id": "6e670581-94ba-41a4-a812-aa6b2aad0213",
+      "cliente_id": "4e30b59f-fc1f-4378-aec6-275a0de9dd59",
+      "items": [
+        {
+          "producto_id": "91bda223-f111-430f-ae1a-0dd60aa9d702",
+          "cantidad": 2,
+          "precio_unitario": 45.99
+        },
+        {
+          "producto_id": "7736893e-a8a5-48d8-a476-9b208f5f3c97",
+          "cantidad": 3,
+          "precio_unitario": 149.99
+        },
+        {
+          "producto_id": "22548382-e641-4126-aa93-1f17228fbeec",
+          "cantidad": 1,
+          "precio_unitario": 199.99
+        }
+      ],
+      "total": 741.94,
+      "fecha": "2025-07-11 13:20:08",
+      "estado": "cancelada"
+    },
+    {
+      "id": "da9c0eb7-4595-4c6a-a55e-abfefa432f52",
+      "cliente_id": "6aa86a43-864a-4da8-a686-1ac8d1ddf872",
+      "items": [
+        {
+          "producto_id": "6679206b-2046-424c-814b-3557d726a973",
+          "cantidad": 1,
+          "precio_unitario": 299.99
+        },
+        {
+          "producto_id": "414eb8df-e4f2-4b86-a287-640e8cd254ba",
+          "cantidad": 5,
+          "precio_unitario": 35.99
+        },
+        {
+          "producto_id": "60ecbe38-853d-4c23-9f0a-f6ed5401c7c0",
+          "cantidad": 2,
+          "precio_unitario": 599.99
+        }
+      ],
+      "total": 1679.92,
+      "fecha": "2025-07-27 13:20:08",
+      "estado": "completada"
+    },
+    {
+      "id": "46ac9834-90e9-421b-985b-e92d494c6a8b",
+      "cliente_id": "63d7846d-c36b-4c13-aade-b25eb4195892",
+      "items": [
+        {
+          "producto_id": "f0d19d20-0dca-42d4-ac68-08faf50ddaa4",
+          "cantidad": 2,
+          "precio_unitario": 89.99
+        },
+        {
+          "producto_id": "152e8301-91f5-40b1-ab1d-8df9661e1cfc",
+          "cantidad": 4,
+          "precio_unitario": 12.99
+        },
+        {
+          "producto_id": "60ecbe38-853d-4c23-9f0a-f6ed5401c7c0",
+          "cantidad": 1,
+          "precio_unitario": 599.99
+        },
+        {
+          "producto_id": "414eb8df-e4f2-4b86-a287-640e8cd254ba",
+          "cantidad": 2,
+          "precio_unitario": 35.99
+        }
+      ],
+      "total": 903.91,
+      "fecha": "2025-07-03 13:20:08",
+      "estado": "completada"
+    },
+    {
+      "id": "5da3f8a0-9778-4201-8155-47b7fc9c2e43",
+      "cliente_id": "09f98f19-ccc8-4cda-93d2-a03f6fbd16ad",
+      "items": [
+        {
+          "producto_id": "819d6cc0-a2d3-44c5-a206-876998ffb424",
+          "cantidad": 3,
+          "precio_unitario": 89.99
+        }
+      ],
+      "total": 269.97,
+      "fecha": "2025-07-15 13:20:08",
+      "estado": "pendiente"
+    },
+    {
+      "id": "2cb10342-a6e1-4fad-98c1-dd905e8926e1",
+      "cliente_id": "a6f0a2cc-e107-4eb0-ab15-89e05b55ac26",
+      "items": [
+        {
+          "producto_id": "44632356-157c-4378-abf2-4c1d439c23cf",
+          "cantidad": 2,
+          "precio_unitario": 349.99
+        }
+      ],
+      "total": 699.98,
+      "fecha": "2025-07-30 13:20:08",
+      "estado": "completada"
+    },
+    {
+      "id": "2714617a-a410-4987-a598-af6e95e87f31",
+      "cliente_id": "7fbde622-1895-414f-b54e-6a17ff5e4d5b",
+      "items": [
+        {
+          "producto_id": "93ede39d-b62f-456a-a8e0-cf35b825cf42",
+          "cantidad": 2,
+          "precio_unitario": 45.99
+        },
+        {
+          "producto_id": "f0d19d20-0dca-42d4-ac68-08faf50ddaa4",
+          "cantidad": 4,
+          "precio_unitario": 89.99
+        },
+        {
+          "producto_id": "6679206b-2046-424c-814b-3557d726a973",
+          "cantidad": 1,
+          "precio_unitario": 299.99
+        }
+      ],
+      "total": 751.93,
+      "fecha": "2025-07-09 13:20:08",
+      "estado": "completada"
+    },
+    {
+      "id": "3ce92482-62a3-45a9-b9bd-0c9f6eab3f76",
+      "cliente_id": "76264321-4a91-4cbc-ae1a-aaf02b6123b9",
+      "items": [
+        {
+          "producto_id": "aed41686-5a70-421f-810d-98f3d2238004",
+          "cantidad": 1,
+          "precio_unitario": 89.99
+        },
+        {
+          "producto_id": "f0d19d20-0dca-42d4-ac68-08faf50ddaa4",
+          "cantidad": 1,
+          "precio_unitario": 89.99
+        },
+        {
+          "producto_id": "9d48aa42-198f-44a4-9ca8-ea31511ea386",
+          "cantidad": 1,
+          "precio_unitario": 199.99
+        },
+        {
+          "producto_id": "414eb8df-e4f2-4b86-a287-640e8cd254ba",
+          "cantidad": 2,
+          "precio_unitario": 35.99
+        }
+      ],
+      "total": 451.95,
+      "fecha": "2025-07-17 13:20:08",
+      "estado": "pendiente"
+    },
+    {
+      "id": "c80c3643-6627-407e-94ba-247da7e2be32",
+      "cliente_id": "b6fa575e-5e6a-40fd-a5f2-e22bac7672b3",
+      "items": [
+        {
+          "producto_id": "2365ab11-a1f1-4985-b2c1-7010eb46880b",
+          "cantidad": 3,
+          "precio_unitario": 79.99
+        },
+        {
+          "producto_id": "1dcef649-44cc-434c-8688-a82bb640554f",
+          "cantidad": 2,
+          "precio_unitario": 129.99
+        },
+        {
+          "producto_id": "91bda223-f111-430f-ae1a-0dd60aa9d702",
+          "cantidad": 3,
+          "precio_unitario": 45.99
+        },
+        {
+          "producto_id": "152e8301-91f5-40b1-ab1d-8df9661e1cfc",
+          "cantidad": 4,
+          "precio_unitario": 12.99
+        }
+      ],
+      "total": 689.88,
+      "fecha": "2025-07-13 13:20:08",
+      "estado": "cancelada"
+    },
+    {
+      "id": "d5fde483-d69d-4077-86a2-6b22f6c1ce08",
+      "cliente_id": "fcd7fd53-2227-4885-8763-6e670d07c907",
+      "items": [
+        {
+          "producto_id": "93ede39d-b62f-456a-a8e0-cf35b825cf42",
+          "cantidad": 3,
+          "precio_unitario": 45.99
+        },
+        {
+          "producto_id": "c3ff6529-c8ad-4647-995f-c83eebacbd56",
+          "cantidad": 2,
+          "precio_unitario": 25.99
+        }
+      ],
+      "total": 189.95,
+      "fecha": "2025-07-14 13:20:08",
+      "estado": "completada"
+    },
+    {
+      "id": "2a7a3f1a-eec6-4cd2-acac-fa4e67d50376",
+      "cliente_id": "0a7c8f15-d03a-4f33-b3e6-3f206f49475e",
+      "items": [
+        {
+          "producto_id": "16b435b6-4f7b-4a92-a235-9b8a6aa3c57d",
+          "cantidad": 4,
+          "precio_unitario": 899.99
+        },
+        {
+          "producto_id": "60ecbe38-853d-4c23-9f0a-f6ed5401c7c0",
+          "cantidad": 4,
+          "precio_unitario": 599.99
+        },
+        {
+          "producto_id": "22548382-e641-4126-aa93-1f17228fbeec",
+          "cantidad": 2,
+          "precio_unitario": 199.99
+        },
+        {
+          "producto_id": "152e8301-91f5-40b1-ab1d-8df9661e1cfc",
+          "cantidad": 5,
+          "precio_unitario": 12.99
+        },
+        {
+          "producto_id": "6679206b-2046-424c-814b-3557d726a973",
+          "cantidad": 3,
+          "precio_unitario": 299.99
+        }
+      ],
+      "total": 7364.82,
+      "fecha": "2025-07-30 13:20:08",
+      "estado": "cancelada"
+    },
+    {
+      "id": "c01307af-22ae-4541-b5c4-46a99b93bc9e",
+      "cliente_id": "b769cdfe-5aae-43ba-88cc-d495c6df3e83",
+      "items": [
+        {
+          "producto_id": "152e8301-91f5-40b1-ab1d-8df9661e1cfc",
+          "cantidad": 4,
+          "precio_unitario": 12.99
+        },
+        {
+          "producto_id": "c8230a60-1c9e-48b6-ab37-7b086edeb865",
+          "cantidad": 1,
+          "precio_unitario": 79.99
+        },
+        {
+          "producto_id": "819d6cc0-a2d3-44c5-a206-876998ffb424",
+          "cantidad": 1,
+          "precio_unitario": 89.99
+        },
+        {
+          "producto_id": "2365ab11-a1f1-4985-b2c1-7010eb46880b",
+          "cantidad": 1,
+          "precio_unitario": 79.99
+        },
+        {
+          "producto_id": "60ecbe38-853d-4c23-9f0a-f6ed5401c7c0",
+          "cantidad": 3,
+          "precio_unitario": 599.99
+        }
+      ],
+      "total": 2101.9,
+      "fecha": "2025-07-19 13:20:08",
+      "estado": "completada"
+    }
+  ]
+}

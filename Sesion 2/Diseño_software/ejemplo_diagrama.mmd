@@ -1,0 +1,59 @@
+erDiagram
+    USUARIO ||--o{ PROYECTO_USUARIO : pertenece
+    USUARIO ||--o{ TAREA : es_responsable
+    USUARIO ||--o{ NOTIFICACION : recibe
+
+    PROYECTO ||--o{ PROYECTO_USUARIO : tiene_miembro
+    PROYECTO ||--o{ TAREA : contiene
+    PROYECTO ||--o{ REPORTE : genera
+
+    TAREA ||--o{ NOTIFICACION : genera
+
+    USUARIO {
+        int id
+        string nombre
+        string correo
+        string contrasena_hash
+        string rol
+    }
+
+    PROYECTO {
+        int id
+        string nombre
+        string descripcion
+        date fecha_inicio
+        date fecha_fin
+    }
+
+    TAREA {
+        int id
+        string titulo
+        string descripcion
+        string estado
+        string prioridad
+        date fecha_limite
+        int proyecto_id
+        int responsable_id
+    }
+
+    NOTIFICACION {
+        int id
+        string tipo
+        string mensaje
+        datetime fecha_envio
+        string estado
+        int usuario_id
+        int tarea_id
+    }
+
+    REPORTE {
+        int id
+        int proyecto_id
+        datetime fecha_generacion
+        string contenido_pdf
+    }
+
+    PROYECTO_USUARIO {
+        int proyecto_id
+        int usuario_id
+    }

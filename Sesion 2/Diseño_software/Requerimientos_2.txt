@@ -1,0 +1,81 @@
+Nombre del Proyecto: ClientBridge – Sistema CRM para Gestión de Relaciones con Clientes
+
+1. Introducción
+
+ClientBridge es un sistema CRM orientado a pequeñas y medianas empresas que desean gestionar eficientemente sus relaciones con clientes, mejorar el seguimiento comercial y automatizar actividades de ventas y atención. Permitirá la administración de contactos, oportunidades, tareas comerciales, campañas de marketing y reportes de rendimiento.
+
+2. Requerimientos Funcionales
+
+RF1. Gestión de Usuarios
+
+    RF1.1: El sistema debe permitir a los usuarios registrarse y autenticarse mediante correo electrónico y contraseña.
+
+    RF1.2: Los usuarios pueden tener roles de Administrador, Vendedor, Soporte o Marketing.
+
+    RF1.3: El administrador podrá crear, editar o eliminar cuentas de usuario y asignar roles.
+
+RF2. Gestión de Clientes y Contactos
+
+    RF2.1: Los usuarios podrán registrar empresas (clientes) con información como nombre, industria, tamaño, ubicación y contacto principal.
+
+    RF2.2: Cada cliente puede tener múltiples contactos asociados (personas), con información como nombre, cargo, email y teléfono.
+
+    RF2.3: El sistema debe permitir filtrar clientes por sector, ubicación o actividad reciente.
+
+RF3. Gestión de Oportunidades de Venta
+
+    RF3.1: Los usuarios pueden crear oportunidades comerciales asociadas a un cliente, incluyendo estado (abierta, ganada, perdida), valor estimado, etapa y fecha esperada de cierre.
+
+    RF3.2: Cada oportunidad puede tener tareas relacionadas y un responsable asignado.
+
+    RF3.3: Se debe poder visualizar un pipeline de ventas con todas las oportunidades por etapa.
+
+RF4. Actividades y Tareas Comerciales
+
+    RF4.1: Los usuarios podrán registrar actividades como llamadas, correos, reuniones, y tareas pendientes asociadas a clientes u oportunidades.
+
+    RF4.2: Las tareas deben poder asignarse a usuarios, tener fechas límite, y cambiar de estado (pendiente, en curso, completada).
+
+    RF4.3: El sistema debe enviar recordatorios automáticos por email de tareas próximas.
+
+RF5. Campañas y Seguimiento
+
+    RF5.1: El sistema permitirá crear campañas de marketing con nombre, descripción, canal (email, llamada, evento), fechas de ejecución y objetivos.
+
+    RF5.2: Los usuarios pueden asociar contactos a campañas y registrar resultados.
+
+RF6. Reportes y Visualización
+
+    RF6.1: El sistema debe generar reportes sobre el pipeline de ventas, historial de actividades y desempeño por usuario.
+
+    RF6.2: Los reportes deben exportarse en PDF o Excel.
+
+    RF6.3: Se debe incluir un dashboard con métricas clave: oportunidades abiertas, ventas cerradas, clientes nuevos y tasa de conversión.
+
+3. Requerimientos No Funcionales
+
+RNF1. Rendimiento
+
+    El sistema debe responder a cualquier solicitud en menos de 2 segundos con hasta 200 usuarios concurrentes.
+
+RNF2. Seguridad
+
+    Las contraseñas deben cifrarse con bcrypt o equivalente.
+
+    El sistema debe usar HTTPS y autenticación basada en tokens (JWT).
+
+    Los datos sensibles deben estar protegidos mediante políticas de acceso por rol.
+
+RNF3. Usabilidad
+
+    La interfaz debe ser responsiva, accesible desde móviles y cumplir con estándares de usabilidad (WCAG 2.1 nivel AA).
+
+RNF4. Mantenibilidad
+
+    El sistema debe estar modularizado y seguir principios SOLID.
+
+    El código debe tener una cobertura de pruebas del 75% como mínimo.
+
+RNF5. Disponibilidad
+
+    El sistema debe garantizar una disponibilidad del 99.7% mensual.
