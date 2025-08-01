@@ -1,0 +1,81 @@
+### Procesador de Mensajes con OpenAI - Ejemplos de Prueba
+
+### 1. Creación de Usuario - Información Completa
+POST https://localhost:7000/api/message
+Content-Type: application/json
+
+{
+  "message": "Necesito crear una cuenta para María García"
+}
+
+### 2. Creación de Usuario - Falta Información
+POST https://localhost:7000/api/message
+Content-Type: application/json
+
+{
+  "message": "Quiero crear un usuario"
+}
+
+### 3. Creación de Usuario con Email
+POST https://localhost:7000/api/message
+Content-Type: application/json
+
+{
+  "message": "Registrarme como juan.perez@email.com"
+}
+
+### 4. Información de Producto - Específico
+POST https://localhost:7000/api/message
+Content-Type: application/json
+
+{
+  "message": "Me gustaría obtener información sobre el iPhone 15"
+}
+
+### 5. Información de Producto - Falta Detalles
+POST https://localhost:7000/api/message
+Content-Type: application/json
+
+{
+  "message": "Necesito información de productos"
+}
+
+### 6. Otros Mensajes
+POST https://localhost:7000/api/message
+Content-Type: application/json
+
+{
+  "message": "Tengo una pregunta general sobre el servicio"
+}
+
+### 7. Consulta de Soporte
+POST https://localhost:7000/api/message
+Content-Type: application/json
+
+{
+  "message": "¿Cuál es el horario de atención al cliente?"
+}
+
+### 8. Queja
+POST https://localhost:7000/api/message
+Content-Type: application/json
+
+{
+  "message": "Tengo una queja sobre el servicio recibido"
+}
+
+### 9. Sugerencia
+POST https://localhost:7000/api/message
+Content-Type: application/json
+
+{
+  "message": "Me gustaría hacer una sugerencia para mejorar el producto"
+}
+
+### 10. Información de Servicios
+POST https://localhost:7000/api/message
+Content-Type: application/json
+
+{
+  "message": "Necesito información sobre el servicio de hosting"
+} 

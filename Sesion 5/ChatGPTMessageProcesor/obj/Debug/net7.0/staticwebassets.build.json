@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "9/4zJFTg3FCKiEHSfLJRKC+ep/jlXqDOS7+cSd47kM8=",
+  "Source": "GeminiMessageProcessor",
+  "BasePath": "_content/GeminiMessageProcessor",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

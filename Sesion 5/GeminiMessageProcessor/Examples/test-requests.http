@@ -1,0 +1,58 @@
+### Procesar mensaje - Creación de usuario
+POST {{baseUrl}}/api/message/process
+Content-Type: application/json
+
+{
+  "message": "Quiero crear un usuario llamado Juan Pérez"
+}
+
+### Procesar mensaje - Creación de usuario con email
+POST {{baseUrl}}/api/message/process
+Content-Type: application/json
+
+{
+  "message": "Necesito registrar una cuenta para maria.garcia@email.com"
+}
+
+### Procesar mensaje - Creación de usuario SIN nombre (solicitará información)
+POST {{baseUrl}}/api/message/process
+Content-Type: application/json
+
+{
+  "message": "Quiero crear un usuario"
+}
+
+### Procesar mensaje - Información de producto específico
+POST {{baseUrl}}/api/message/process
+Content-Type: application/json
+
+{
+  "message": "Me gustaría obtener información sobre el iPhone 15"
+}
+
+### Procesar mensaje - Información de producto específico (categoría)
+POST {{baseUrl}}/api/message/process
+Content-Type: application/json
+
+{
+  "message": "Necesito precios de laptops gaming"
+}
+
+### Procesar mensaje - Información de producto SIN detalles (solicitará información)
+POST {{baseUrl}}/api/message/process
+Content-Type: application/json
+
+{
+  "message": "Me gustaría obtener información sobre productos"
+}
+
+### Procesar mensaje - Consulta general
+POST {{baseUrl}}/api/message/process
+Content-Type: application/json
+
+{
+  "message": "¿Cuál es el horario de atención al cliente?"
+}
+
+### Verificar estado de la API
+GET {{baseUrl}}/api/message/health 
