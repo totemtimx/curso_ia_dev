@@ -1,0 +1,43 @@
+{
+  "name": "mi-aplicacion-web",
+  "version": "1.0.0",
+  "description": "Aplicación web moderna con navegación de vistas dinámicas",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000",
+    "serve": "python3 -m http.server 8000",
+    "test": "echo \"No tests specified\" && exit 0",
+    "lint": "echo \"No linter configured\" && exit 0",
+    "build": "echo \"No build process needed\" && exit 0"
+  },
+  "keywords": [
+    "web",
+    "spa",
+    "javascript",
+    "css",
+    "html",
+    "responsive",
+    "modern"
+  ],
+  "author": "Tu Nombre",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tu-usuario/mi-aplicacion-web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tu-usuario/mi-aplicacion-web/issues"
+  },
+  "homepage": "https://github.com/tu-usuario/mi-aplicacion-web#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+} 

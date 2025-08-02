@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Aplicación Web</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>MiApp</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Inicio</a></li>
+                <li><a href="#about" class="nav-link">Acerca de</a></li>
+                <li><a href="#services" class="nav-link">Servicios</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <!-- Vista de Inicio -->
+        <section id="home" class="view active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h2>Bienvenido a Mi Aplicación</h2>
+                    <p>Una aplicación web moderna con vistas dinámicas</p>
+                    <button class="btn btn-primary" onclick="showView('about')">
+                        Comenzar
+                    </button>
+                </div>
+                <div class="hero-image">
+                    <div class="placeholder-image">
+                        <span>🎨</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vista Acerca de -->
+        <section id="about" class="view">
+            <div class="container">
+                <h2>Acerca de Nosotros</h2>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="card-icon">🚀</div>
+                        <h3>Innovación</h3>
+                        <p>Creamos soluciones innovadoras para el futuro digital.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">💡</div>
+                        <h3>Creatividad</h3>
+                        <p>Diseñamos experiencias únicas y memorables.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">⚡</div>
+                        <h3>Rendimiento</h3>
+                        <p>Optimizamos cada aspecto para máxima eficiencia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vista Servicios -->
+        <section id="services" class="view">
+            <div class="container">
+                <h2>Nuestros Servicios</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Desarrollo Web</h3>
+                        <p>Sitios web modernos y responsivos</p>
+                        <ul>
+                            <li>HTML5 & CSS3</li>
+                            <li>JavaScript ES6+</li>
+                            <li>Frameworks modernos</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <h3>Diseño UI/UX</h3>
+                        <p>Interfaces intuitivas y atractivas</p>
+                        <ul>
+                            <li>Diseño centrado en usuario</li>
+                            <li>Prototipado rápido</li>
+                            <li>Testing de usabilidad</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <h3>Optimización SEO</h3>
+                        <p>Mejora la visibilidad de tu sitio</p>
+                        <ul>
+                            <li>Análisis de palabras clave</li>
+                            <li>Optimización técnica</li>
+                            <li>Contenido optimizado</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vista Contacto -->
+        <section id="contact" class="view">
+            <div class="container">
+                <h2>Contáctanos</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Información de Contacto</h3>
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <p>info@miapp.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <p>Ciudad, País</p>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Mi Aplicación Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/navigation.js"></script>
+</body>
+</html> 
